@@ -1,0 +1,2 @@
+# herrors
+HTTP error classes
