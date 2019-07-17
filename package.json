@@ -1,6 +1,6 @@
 {
   "name": "heror",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "HTTP Error Classes",
   "license": "MIT",
   "private": false,
