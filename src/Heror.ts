@@ -1,9 +1,9 @@
-export default class Herrors extends Error {
+export default class Heror extends Error {
   private _statusCode!: number;
   private _error!: string;
   private _data!: any | undefined;
 
-  constructor(statusCode: number, error: string, message?: string, data?: any) {
+  public constructor(statusCode: number, error: string, message?: string, data?: any) {
     const msg = message === undefined ? error : message;
     super(msg);
 
