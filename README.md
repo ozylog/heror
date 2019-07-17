@@ -1,9 +1,9 @@
-# herrors
+# heror
 HTTP error classes
 
 ## Install
 ```
-yarn add herrors
+yarn add heror
 ```
 
 ## Class
@@ -21,7 +21,7 @@ createError(statusCode: number, error: string)
 - `error` - official http error type/message
 
 ## List of error classes
-We provide some common http errors below. If your case is not covered by the errors. You could create new error using `createError` function. Please see [usage examples](#usageexamples).
+We provide some common http errors below. If your case is not covered by the errors. You could create new error using `createError` function. Please see [usage examples](#usage-examples).
 
 | Status Code | Error Class Name         |
 |-------------|--------------------------|
@@ -43,7 +43,7 @@ We provide some common http errors below. If your case is not covered by the err
 
 ## Usage Examples
 ```
-import { BadRequestError, UnauthorizedError, createError } from 'herrors';
+import { BadRequestError, UnauthorizedError, createError } from 'heror';
 
 const URITooLongError = createError(414, 'URI Too Long');
 
