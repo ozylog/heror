@@ -1,0 +1,78 @@
+{
+  "name": "heror",
+  "version": "0.1.0",
+  "description": "HTTP Error Classes",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/index.js",
+  "repository": "git@github.com:ozylog/heror.git",
+  "keywords": [
+    "error",
+    "http",
+    "typescript"
+  ],
+  "contributors": [
+    "Cahya Pribadi <ozylog@gmail.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/ozylog/heror/issues"
+  },
+  "homepage": "https://github.com/ozylog/heror.git#readme",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "test": "eslint ./src/* --fix && jest --coverage",
+    "coverage": "cat ./coverage/lcov.info | yarn coveralls"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "coveralls": "^3.0.4",
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "no-console": 1,
+      "no-useless-escape": 0,
+      "@typescript-eslint/indent": [
+        "error",
+        2
+      ],
+      "@typescript-eslint/explicit-function-return-type": 0,
+      "@typescript-eslint/no-explicit-any": 0,
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          "args": "none"
+        }
+      ]
+    }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ]
+  }
+}

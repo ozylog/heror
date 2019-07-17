@@ -1,0 +1,31 @@
+# --------------------
+# OSX Files
+# --------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# --------------------
+# Node Files
+# --------------------
+node_modules/
+coverage/
+src/
+test/
+tsconfig.json
+.travis.yml
+yarn.lock
+LICENSE
+
+# --------------------
+# Other Files
+# --------------------
+.vscode/
+*.log
+.gitignore
+README.md
+CHANGELOG.md
