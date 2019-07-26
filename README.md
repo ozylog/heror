@@ -1,4 +1,10 @@
 # heror
+![Build](https://badgen.net/travis/ozylog/heror/master)
+![Coverage](https://badgen.net/coveralls/c/github/ozylog/heror/master)
+![DevDependencies](https://badgen.net/david/dev/ozylog/heror)
+![LatestVersion](https://badgen.net/npm/v/heror)
+![License](https://badgen.net/npm/license/heror)
+
 HTTP error classes
 
 ## Install
